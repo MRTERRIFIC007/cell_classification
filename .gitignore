@@ -59,4 +59,7 @@ roc_curve*.png
 ResNet50_*.png
 training_history.png
 
+# Data directory - contains image files
+Data/
+
 # Any file over 500KB (except important ones like README) 
