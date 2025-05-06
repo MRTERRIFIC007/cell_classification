@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large model files
+*.keras
+*.h5
+*.tiff
+
+# Specific large files and directories
+cell_classification_results.zip
+model_analysis_results/model_radar_charts.png
+enhanced_cell_classification_results/best_*_model.keras
+enhanced_cell_classification_results/*_training_curves.png
+ensemble_cell_classification_results/
+
+# Image files
+confusion_matrix*.png
+roc_curve*.png
+*_roc_curve.png
+*_confusion_matrix.png
+ResNet50_*.png
+training_history.png
+
+# Any file over 500KB (except important ones like README) 

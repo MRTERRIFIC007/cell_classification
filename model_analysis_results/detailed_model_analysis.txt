@@ -1,0 +1,184 @@
+================================================================================
+DETAILED MODEL ANALYSIS RESULTS
+================================================================================
+
+MODEL: Xception
+--------------------------------------------------
+
+Accuracy: 0.9444
+
+1) Precision:
+   - 5nMTG: 0.8947
+   - Control: 0.9412
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.9453
+
+2) Recall (Sensitivity):
+   - 5nMTG: 0.9444
+   - Control: 0.8889
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.9444
+
+3) Specificity:
+   - 5nMTG: 0.9444
+   - Control: 0.9722
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.9722
+
+4) F1 Score:
+   - 5nMTG: 0.9189
+   - Control: 0.9143
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.9449
+
+5) MCC Score: 0.9171
+
+6) AUC Score (micro-average): 0.9818
+
+7) Confusion Matrix:
+                    Predicted
+                    5nMTG      Control    NonCancerOral
+    Actual
+    5nMTG      17         1          0         
+    Control    2          16         0         
+    NonCancerOral 0          0          18        
+
+================================================================================
+
+MODEL: ResNet101V2
+--------------------------------------------------
+
+Accuracy: 0.8148
+
+1) Precision:
+   - 5nMTG: 0.8182
+   - Control: 1.0000
+   - NonCancerOral: 0.7500
+   - Macro Average: 0.8561
+
+2) Recall (Sensitivity):
+   - 5nMTG: 1.0000
+   - Control: 0.4444
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.8148
+
+3) Specificity:
+   - 5nMTG: 0.8889
+   - Control: 1.0000
+   - NonCancerOral: 0.8333
+   - Macro Average: 0.9074
+
+4) F1 Score:
+   - 5nMTG: 0.9000
+   - Control: 0.6154
+   - NonCancerOral: 0.8571
+   - Macro Average: 0.7908
+
+5) MCC Score: 0.7522
+
+6) AUC Score (micro-average): 0.9139
+
+7) Confusion Matrix:
+                    Predicted
+                    5nMTG      Control    NonCancerOral
+    Actual
+    5nMTG      18         0          0         
+    Control    4          8          6         
+    NonCancerOral 0          0          18        
+
+================================================================================
+
+MODEL: ResNet152
+--------------------------------------------------
+
+Accuracy: 0.7593
+
+1) Precision:
+   - 5nMTG: 0.6667
+   - Control: 0.6842
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.7836
+
+2) Recall (Sensitivity):
+   - 5nMTG: 0.7778
+   - Control: 0.7222
+   - NonCancerOral: 0.7778
+   - Macro Average: 0.7593
+
+3) Specificity:
+   - 5nMTG: 0.8056
+   - Control: 0.8333
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.8796
+
+4) F1 Score:
+   - 5nMTG: 0.7179
+   - Control: 0.7027
+   - NonCancerOral: 0.8750
+   - Macro Average: 0.7713
+
+5) MCC Score: 0.6432
+
+6) AUC Score (micro-average): 0.9002
+
+7) Confusion Matrix:
+                    Predicted
+                    5nMTG      Control    NonCancerOral
+    Actual
+    5nMTG      14         4          0         
+    Control    5          13         0         
+    NonCancerOral 2          2          14        
+
+================================================================================
+
+MODEL: NASNetMobile
+--------------------------------------------------
+
+Accuracy: 0.4815
+
+1) Precision:
+   - 5nMTG: 0.4865
+   - Control: 0.3571
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.6145
+
+2) Recall (Sensitivity):
+   - 5nMTG: 1.0000
+   - Control: 0.2778
+   - NonCancerOral: 0.1667
+   - Macro Average: 0.4815
+
+3) Specificity:
+   - 5nMTG: 0.4722
+   - Control: 0.7500
+   - NonCancerOral: 1.0000
+   - Macro Average: 0.7407
+
+4) F1 Score:
+   - 5nMTG: 0.6545
+   - Control: 0.3125
+   - NonCancerOral: 0.2857
+   - Macro Average: 0.4176
+
+5) MCC Score: 0.2675
+
+6) AUC Score (micro-average): 0.6854
+
+7) Confusion Matrix:
+                    Predicted
+                    5nMTG      Control    NonCancerOral
+    Actual
+    5nMTG      18         0          0         
+    Control    13         5          0         
+    NonCancerOral 6          9          3         
+
+================================================================================
+
+SUMMARY COMPARISON
+------------------------------------------------------------------------------------------
+Model           Accuracy   Precision  Recall     Specificity F1 Score   MCC        AUC       
+------------------------------------------------------------------------------------------
+Xception        0.9444      0.9453     0.9444     0.9722     0.9449      0.9171     0.9818
+ResNet101V2     0.8148      0.8561     0.8148     0.9074     0.7908      0.7522     0.9139
+ResNet152       0.7593      0.7836     0.7593     0.8796     0.7713      0.6432     0.9002
+NASNetMobile    0.4815      0.6145     0.4815     0.7407     0.4176      0.2675     0.6854
